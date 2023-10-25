@@ -21,7 +21,7 @@ body {
   justify-content: space-between;
   padding: 15px 30px;
   background-color: #2c3e50;
-  color: #ecf0f1;
+  color: #fcfcfc;
 }
 
 .navbar img {
@@ -40,10 +40,23 @@ body {
 }
 
 .profile-dropdown {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
+  top: 12px;
+  left: 1272px;
+  width: 286px;
+  height: 32px;
+  background: transparent url('img/Rectangle2280.png') 0% 0% no-repeat padding-box;
+  background-color: #f9f9f9;
+border-radius: 4px;
+opacity: 1;
 }
+.profile-dropdown-text {
+  top: 19px;
+  left: 1304px;
+  width: 129px;
+  height: 16px;
+  font-size: 14px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
 /* SideBar Styles */
 .sidebar {
