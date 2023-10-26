@@ -148,7 +148,7 @@ function CompanyProfile() {
           </div>
       </div>
   );
-}
+
 
 
 function Addresses() {
@@ -156,7 +156,59 @@ function Addresses() {
 }
 
 function PersonalDetails() {
-  return <div>PersonalDetails Component Here...</div>;
+  
+  ```jsx
+  <div className="company-profile">
+    <h2>Company Profile</h2>
+    <div className="grid-row">
+      <div className="input-group">
+        <input type="text" name="companyType" placeholder="Company Type" value={companyProfileData.companyType} onChange={handleInputChange} />
+      </div>
+      <div className="input-group">
+        <input type="radio" name="registrationStatus" value="Registered" checked={companyProfileData.registrationStatus === 'Registered'} onChange={handleInputChange} /> Registered
+        <input type="radio" name="registrationStatus" value="Unregistered" checked={companyProfileData.registrationStatus === 'Unregistered'} onChange={handleInputChange} /> Unregistered
+      </div>
+      <div className="input-group">
+        <input type="text" name="companyID" placeholder="Company ID" onChange={handleInputChange} />
+      </div>
+    </div>
+    <div className="grid-row">
+      <div className="input-group">
+        <input type="text" name="GSTNumber" placeholder="GST Number" onChange={handleInputChange} />
+      </div>
+      <div className="input-group">
+        <input type="text" name="businessTradeName" placeholder="Business Trade Name" onChange={handleInputChange} />
+      </div>
+      <div className="input-group">
+        <input type="text" name="businessLegalName" placeholder="Business Legal Name" onChange={handleInputChange} />
+      </div>
+    </div>
+    <div className="grid-row">
+      <div className="input-group">
+        <input type="text" name="mobileNumber" placeholder="Mobile Number" onChange={handleInputChange} />
+      </div>
+      <div className="input-group">
+        <input type="text" name="businessEmail" placeholder="Business Email" onChange={handleInputChange} />
+      </div>
+      <div className="input-group">
+        <input type="text" name="industry" placeholder="Industry" value={companyProfileData.industry} onChange={handleInputChange} />
+      </div>
+    </div>
+    <div className="grid-row">
+      <div className="input-group">
+        {/* Placeholder for any additional inputs */}
+      </div>
+      <div className="input-group">
+        {/* Placeholder for any additional inputs */}
+      </div>
+      <div className="input-group">
+        <input type="file" name="logo" onChange={handleFileChange} />
+      </div>
+    </div>
+  </div>
+  ```
+  
+  
 }
 
 function BusinessLegalInfo() {
