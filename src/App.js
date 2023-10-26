@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import Rectangle2280 from './img/Rectangle2280.png';
+
 
 
 
@@ -24,8 +26,8 @@ function NavBar() {
       <input type="text" placeholder="Search..." />
       <span className="notification-icon">🔔</span>
       <select className="profile-dropdown">
-        <option>Profile</option>
-        <option>Logout</option>
+        <option className="profile-dropdown-text">ABC Private limited</option>
+        <option>XYZ Private limited</option>
       </select>
     </div>
   );
