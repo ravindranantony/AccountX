@@ -80,7 +80,14 @@ function CompanyProfile() {
       industry: '',
       logo: null
   });
+function PersonalDetails() {
+  const [PersonalDetailsData, setPersonalDetailsData] =useState({
+      FirstName: '',
+      MiddleName :'',
+      LastName: '',
 
+  })
+}
   const handleInputChange = (event) => {
       const { name, value } = event.target;
       setCompanyProfileData(prevData => ({
