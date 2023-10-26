@@ -86,7 +86,7 @@ function PersonalDetails() {
       MiddleName :'',
       LastName: '',
 
-  })
+  });
 }
   const handleInputChange = (event) => {
       const { name, value } = event.target;
