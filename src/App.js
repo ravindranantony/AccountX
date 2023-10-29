@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 // App Component
 function App() {
@@ -106,7 +107,7 @@ function MainContent() {
   return (
     <div className="main-content">
       <CompanyProfileHeader/>
-      
+      <CompanyProfile/>
       {/* <Addresses />
       <PersonalDetails />
       <BusinessLegalInfo />
@@ -135,6 +136,49 @@ function CompanyProfileHeader() {
     </div>
   );
 }
+
+
+function CompanyProfile() {
+  return (
+    <div className="cp-company-container">
+      <div className="cp-column">
+
+        {/* First Row */}
+        <div className="cp-row">
+          <input type="text" placeholder="GST Number" />
+          <div className="cp-input-with-dropdown">
+            <input type="text" placeholder="Company Type" />
+            <button className="dropdown-icon-right"></button>
+          </div>
+          <input type="text" placeholder="Company ID" />
+        </div>
+
+        {/* Second Row */}
+        <div className="cp-row">
+          <input type="text" placeholder="Business Trade Name" />
+          <input type="text" placeholder="Business Legal Name" />
+        </div>
+
+        {/* Third Row */}
+        <div className="cp-row">
+          <div className="cp-input-with-icon mobile">
+            <span className="country-code">+91</span>
+            <input type="text" placeholder="Mobile Number" />
+          </div>
+          <input type="email" placeholder="Business Email" />
+          <div className="cp-input-with-icon">
+            <input type="text" placeholder="Industry" />
+            <i className="fa fa-search icon-button"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="cp-label-box">Upload your logo</div>
+    </div>
+  );
+}
+
 
 
 
